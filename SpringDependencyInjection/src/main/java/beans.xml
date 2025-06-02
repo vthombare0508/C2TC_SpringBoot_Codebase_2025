@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="mathObjectValue" class="com.tnsif.di1.Math" />
+
+<bean id="s1" class="com.tnsif.di1.Student">
+       <property name="m" ref="mathObjectValue"/>
+		  	  
+		   </bean>
+		   
+	
+<bean id="s2" class="com.tnsif.di1.Student1">
+       <property name="m" ref="mathObjectValue"/>
+		    </bean>
+
+
+</beans>
